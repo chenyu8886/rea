@@ -1,0 +1,17 @@
+{
+  "_说明": "把 mcpServers.rea 这一段合并进 WorkBuddy 的 ~/.workbuddy/mcp.json。路径按本机实际改，改完必须在界面【自定义连接器】粘贴保存+重启才生效，详见 README。",
+  "mcpServers": {
+    "rea": {
+      "type": "stdio",
+      "command": "D:\\WorkBuddyData\\binaries\\node\\versions\\node-v24.22.3-win-x64\\node.exe",
+      "args": [
+        "D:\\External\\GitHubRepos\\rea-runtime\\node_modules\\rea-agents\\scripts\\rea.mjs",
+        "mcp"
+      ],
+      "env": {
+        "GHIDRA_INSTALL_DIR": "D:/External/REAtools/ghidra_12.1.4_PUBLIC",
+        "JAVA_HOME": "D:/External/REAtools/jdk-21.0.12.1+1"
+      }
+    }
+  }
+}
